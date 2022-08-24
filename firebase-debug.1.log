@@ -1,0 +1,267 @@
+[debug] [2022-08-24T12:35:22.271Z] ----------------------------------------------------------------------
+[debug] [2022-08-24T12:35:22.274Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Macber-PC1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-24T12:35:22.275Z] CLI Version:   11.8.0
+[debug] [2022-08-24T12:35:22.275Z] Platform:      win32
+[debug] [2022-08-24T12:35:22.275Z] Node Version:  v18.3.0
+[debug] [2022-08-24T12:35:22.277Z] Time:          Wed Aug 24 2022 14:35:22 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-08-24T12:35:22.277Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-24T12:35:22.373Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-24T12:35:22.373Z] > authorizing via signed-in user (ahmedashraf2398@gmail.com)
+[debug] [2022-08-24T12:35:22.373Z] [iam] checking project udemy-firebase-sites-9bc98 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-24T12:35:22.377Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions [none]
+[debug] [2022-08-24T12:35:22.377Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions x-goog-quota-user=projects/udemy-firebase-sites-9bc98
+[debug] [2022-08-24T12:35:22.378Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:35:23.294Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions 200
+[debug] [2022-08-24T12:35:23.295Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:35:23.297Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:35:23.643Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:35:23.644Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[info] 
+[info] === Deploying to 'udemy-firebase-sites-9bc98'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-24T12:35:23.648Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:35:23.998Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:35:23.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[debug] [2022-08-24T12:35:24.001Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions [none]
+[debug] [2022-08-24T12:35:24.002Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-24T12:35:25.655Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions 200
+[debug] [2022-08-24T12:35:25.655Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"name":"projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[udemy-firebase-sites-9bc98]: beginning deploy... 
+[info] i  hosting[udemy-firebase-sites-9bc98]: found 7 files in dist 
+[debug] [2022-08-24T12:35:25.675Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-24T12:35:25.676Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2022-08-24T12:35:26.530Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2022-08-24T12:35:26.531Z] [hosting][hash queue][FINAL] {"max":834,"min":12,"avg":145.28571428571428,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":852}
+[debug] [2022-08-24T12:35:26.531Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d:populateFiles [none]
+[debug] [2022-08-24T12:35:26.531Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d:populateFiles {"files":{"/css/app.e6f7c0bd.css":"f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615","/favicon.ico":"d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2","/index.html":"34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a","/js/app.49085fd4.js":"06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725","/js/app.49085fd4.js.map":"6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327","/js/chunk-vendors.c2c2d51b.js":"7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e","/js/chunk-vendors.c2c2d51b.js.map":"264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"}}
+[debug] [2022-08-24T12:35:27.588Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d:populateFiles 200
+[debug] [2022-08-24T12:35:27.588Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d:populateFiles {"uploadRequiredHashes":["6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327","7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e","264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c","f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615","d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2","34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a","06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files"}
+[debug] [2022-08-24T12:35:27.590Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327 [none]
+[debug] [2022-08-24T12:35:27.591Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327 [stream]
+[debug] [2022-08-24T12:35:27.595Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e [none]
+[debug] [2022-08-24T12:35:27.595Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e [stream]
+[debug] [2022-08-24T12:35:27.597Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:35:27.598Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:35:27.600Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615 [none]
+[debug] [2022-08-24T12:35:27.600Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615 [stream]
+[debug] [2022-08-24T12:35:27.603Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2 [none]
+[debug] [2022-08-24T12:35:27.603Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2 [stream]
+[debug] [2022-08-24T12:35:27.606Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a [none]
+[debug] [2022-08-24T12:35:27.606Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a [stream]
+[debug] [2022-08-24T12:35:27.609Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725 [none]
+[debug] [2022-08-24T12:35:27.609Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725 [stream]
+[debug] [2022-08-24T12:35:27.611Z] [hosting][populate queue][FINAL] {"max":1064,"min":1064,"avg":1064,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1085}
+[debug] [2022-08-24T12:35:27.612Z] [hosting] uploads queued: 7
+[debug] [2022-08-24T12:35:28.870Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a 200
+[debug] [2022-08-24T12:35:28.870Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a [stream]
+[debug] [2022-08-24T12:35:28.980Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615 200
+[debug] [2022-08-24T12:35:28.980Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615 [stream]
+[debug] [2022-08-24T12:35:29.011Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725 200
+[debug] [2022-08-24T12:35:29.011Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725 [stream]
+[debug] [2022-08-24T12:35:29.024Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327 200
+[debug] [2022-08-24T12:35:29.024Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327 [stream]
+[debug] [2022-08-24T12:35:29.035Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2 200
+[debug] [2022-08-24T12:35:29.035Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2 [stream]
+[debug] [2022-08-24T12:35:30.124Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e 200
+[debug] [2022-08-24T12:35:30.124Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e [stream]
+[debug] [2022-08-24T12:36:50.037Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:36:50.038Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:36:50.039Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/51d005c7a6d2f65d/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:37:55.345Z] ----------------------------------------------------------------------
+[debug] [2022-08-24T12:37:55.348Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Macber-PC1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-24T12:37:55.349Z] CLI Version:   11.8.0
+[debug] [2022-08-24T12:37:55.349Z] Platform:      win32
+[debug] [2022-08-24T12:37:55.349Z] Node Version:  v18.3.0
+[debug] [2022-08-24T12:37:55.350Z] Time:          Wed Aug 24 2022 14:37:55 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-08-24T12:37:55.351Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-24T12:37:55.443Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-24T12:37:55.444Z] > authorizing via signed-in user (ahmedashraf2398@gmail.com)
+[debug] [2022-08-24T12:37:55.444Z] [iam] checking project udemy-firebase-sites-9bc98 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-24T12:37:55.447Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions [none]
+[debug] [2022-08-24T12:37:55.448Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions x-goog-quota-user=projects/udemy-firebase-sites-9bc98
+[debug] [2022-08-24T12:37:55.448Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:37:56.359Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions 200
+[debug] [2022-08-24T12:37:56.359Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:37:56.361Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:37:56.723Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:37:56.723Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[info] 
+[info] === Deploying to 'udemy-firebase-sites-9bc98'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-24T12:37:56.727Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:37:57.071Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:37:57.072Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[debug] [2022-08-24T12:37:57.074Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions [none]
+[debug] [2022-08-24T12:37:57.075Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-24T12:37:58.351Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions 200
+[debug] [2022-08-24T12:37:58.351Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"name":"projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[udemy-firebase-sites-9bc98]: beginning deploy... 
+[info] i  hosting[udemy-firebase-sites-9bc98]: found 7 files in dist 
+[debug] [2022-08-24T12:37:58.367Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-24T12:37:58.377Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2022-08-24T12:37:58.378Z] [hosting][hash queue][FINAL] {"max":4,"min":1,"avg":1,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":7}
+[debug] [2022-08-24T12:37:58.378Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd:populateFiles [none]
+[debug] [2022-08-24T12:37:58.379Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd:populateFiles {"files":{"/favicon.ico":"d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2","/index.html":"34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a","/css/app.e6f7c0bd.css":"f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615","/js/app.49085fd4.js":"06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725","/js/app.49085fd4.js.map":"6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327","/js/chunk-vendors.c2c2d51b.js":"7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e","/js/chunk-vendors.c2c2d51b.js.map":"264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"}}
+[debug] [2022-08-24T12:37:59.445Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd:populateFiles 200
+[debug] [2022-08-24T12:37:59.445Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd:populateFiles {"uploadRequiredHashes":["264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files"}
+[debug] [2022-08-24T12:37:59.447Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:37:59.447Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:37:59.449Z] [hosting][populate queue][FINAL] {"max":1072,"min":1072,"avg":1072,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1074}
+[debug] [2022-08-24T12:37:59.449Z] [hosting] uploads queued: 1
+[debug] [2022-08-24T12:39:21.892Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:39:21.893Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:39:21.894Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:40:44.737Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:40:44.738Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:40:44.738Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:42:08.379Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:42:08.380Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:42:08.380Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:43:33.625Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:43:33.626Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:43:33.626Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/81f12aeafdee71bd/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:44:39.185Z] ----------------------------------------------------------------------
+[debug] [2022-08-24T12:44:39.189Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Macber-PC1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-08-24T12:44:39.191Z] CLI Version:   11.8.0
+[debug] [2022-08-24T12:44:39.191Z] Platform:      win32
+[debug] [2022-08-24T12:44:39.191Z] Node Version:  v18.3.0
+[debug] [2022-08-24T12:44:39.192Z] Time:          Wed Aug 24 2022 14:44:39 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-08-24T12:44:39.192Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-24T12:44:39.328Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-24T12:44:39.329Z] > authorizing via signed-in user (ahmedashraf2398@gmail.com)
+[debug] [2022-08-24T12:44:39.329Z] [iam] checking project udemy-firebase-sites-9bc98 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-24T12:44:39.333Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions [none]
+[debug] [2022-08-24T12:44:39.333Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions x-goog-quota-user=projects/udemy-firebase-sites-9bc98
+[debug] [2022-08-24T12:44:39.333Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:44:40.309Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions 200
+[debug] [2022-08-24T12:44:40.311Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:44:40.316Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:44:40.742Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:44:40.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[info] 
+[info] === Deploying to 'udemy-firebase-sites-9bc98'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-24T12:44:40.770Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:44:41.121Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:44:41.121Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[debug] [2022-08-24T12:44:41.130Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions [none]
+[debug] [2022-08-24T12:44:41.130Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-24T12:44:42.498Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions 200
+[debug] [2022-08-24T12:44:42.499Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"name":"projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[udemy-firebase-sites-9bc98]: beginning deploy... 
+[info] i  hosting[udemy-firebase-sites-9bc98]: found 7 files in dist 
+[debug] [2022-08-24T12:44:42.516Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-24T12:44:42.531Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2022-08-24T12:44:42.532Z] [hosting][hash queue][FINAL] {"max":3,"min":1,"avg":1,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":12}
+[debug] [2022-08-24T12:44:42.533Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c:populateFiles [none]
+[debug] [2022-08-24T12:44:42.533Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c:populateFiles {"files":{"/favicon.ico":"d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2","/index.html":"34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a","/css/app.e6f7c0bd.css":"f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615","/js/app.49085fd4.js":"06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725","/js/app.49085fd4.js.map":"6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327","/js/chunk-vendors.c2c2d51b.js":"7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e","/js/chunk-vendors.c2c2d51b.js.map":"264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"}}
+[debug] [2022-08-24T12:44:43.586Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c:populateFiles 200
+[debug] [2022-08-24T12:44:43.586Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c:populateFiles {"uploadRequiredHashes":["264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c/files"}
+[debug] [2022-08-24T12:44:43.592Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:44:43.593Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:44:43.598Z] [hosting][populate queue][FINAL] {"max":1068,"min":1068,"avg":1068,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1074}
+[debug] [2022-08-24T12:44:43.598Z] [hosting] uploads queued: 1
+[debug] [2022-08-24T12:46:06.017Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:46:06.019Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:46:06.019Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/ab0f674985e2166c/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:47:19.721Z] ----------------------------------------------------------------------
+[debug] [2022-08-24T12:47:19.724Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Macber-PC1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-08-24T12:47:19.725Z] CLI Version:   11.8.0
+[debug] [2022-08-24T12:47:19.725Z] Platform:      win32
+[debug] [2022-08-24T12:47:19.725Z] Node Version:  v18.3.0
+[debug] [2022-08-24T12:47:19.726Z] Time:          Wed Aug 24 2022 14:47:19 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-08-24T12:47:19.727Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-24T12:47:19.897Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-24T12:47:19.898Z] > authorizing via signed-in user (ahmedashraf2398@gmail.com)
+[debug] [2022-08-24T12:47:19.899Z] [iam] checking project udemy-firebase-sites-9bc98 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-24T12:47:19.903Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions [none]
+[debug] [2022-08-24T12:47:19.904Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions x-goog-quota-user=projects/udemy-firebase-sites-9bc98
+[debug] [2022-08-24T12:47:19.904Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:47:20.887Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions 200
+[debug] [2022-08-24T12:47:20.887Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:47:20.889Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:47:21.252Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:47:21.252Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[info] 
+[info] === Deploying to 'udemy-firebase-sites-9bc98'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-24T12:47:21.259Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:47:21.569Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:47:21.569Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[debug] [2022-08-24T12:47:21.575Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions [none]
+[debug] [2022-08-24T12:47:21.575Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-24T12:47:22.833Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions 200
+[debug] [2022-08-24T12:47:22.834Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"name":"projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[udemy-firebase-sites-9bc98]: beginning deploy... 
+[info] i  hosting[udemy-firebase-sites-9bc98]: found 7 files in dist 
+[debug] [2022-08-24T12:47:22.850Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-24T12:47:22.860Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2022-08-24T12:47:22.860Z] [hosting][hash queue][FINAL] {"max":2,"min":0,"avg":0,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":5}
+[debug] [2022-08-24T12:47:22.861Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9:populateFiles [none]
+[debug] [2022-08-24T12:47:22.862Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9:populateFiles {"files":{"/favicon.ico":"d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2","/index.html":"34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a","/css/app.e6f7c0bd.css":"f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615","/js/app.49085fd4.js":"06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725","/js/app.49085fd4.js.map":"6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327","/js/chunk-vendors.c2c2d51b.js":"7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e","/js/chunk-vendors.c2c2d51b.js.map":"264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"}}
+[debug] [2022-08-24T12:47:23.881Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9:populateFiles 200
+[debug] [2022-08-24T12:47:23.881Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9:populateFiles {"uploadRequiredHashes":["264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9/files"}
+[debug] [2022-08-24T12:47:23.884Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:47:23.884Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:47:23.889Z] [hosting][populate queue][FINAL] {"max":1026,"min":1026,"avg":1026,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1031}
+[debug] [2022-08-24T12:47:23.890Z] [hosting] uploads queued: 1
+[debug] [2022-08-24T12:48:46.312Z] [uploadQueue] Retrying task 264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c
+[debug] [2022-08-24T12:48:46.314Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:48:46.315Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/f6e6ce9d24f6e5f9/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:50:20.612Z] ----------------------------------------------------------------------
+[debug] [2022-08-24T12:50:20.615Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Macber-PC1\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-08-24T12:50:20.616Z] CLI Version:   11.8.0
+[debug] [2022-08-24T12:50:20.616Z] Platform:      win32
+[debug] [2022-08-24T12:50:20.617Z] Node Version:  v18.3.0
+[debug] [2022-08-24T12:50:20.618Z] Time:          Wed Aug 24 2022 14:50:20 GMT+0200 (Eastern European Standard Time)
+[debug] [2022-08-24T12:50:20.618Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-08-24T12:50:20.758Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-08-24T12:50:20.759Z] > authorizing via signed-in user (ahmedashraf2398@gmail.com)
+[debug] [2022-08-24T12:50:20.759Z] [iam] checking project udemy-firebase-sites-9bc98 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-08-24T12:50:20.763Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions [none]
+[debug] [2022-08-24T12:50:20.763Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions x-goog-quota-user=projects/udemy-firebase-sites-9bc98
+[debug] [2022-08-24T12:50:20.764Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:50:21.675Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions 200
+[debug] [2022-08-24T12:50:21.675Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/udemy-firebase-sites-9bc98:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-08-24T12:50:21.676Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:50:22.000Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:50:22.000Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[info] 
+[info] === Deploying to 'udemy-firebase-sites-9bc98'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-08-24T12:50:22.005Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 [none]
+[debug] [2022-08-24T12:50:22.356Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 200
+[debug] [2022-08-24T12:50:22.357Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/udemy-firebase-sites-9bc98 {"projectId":"udemy-firebase-sites-9bc98","projectNumber":"211741095964","displayName":"Udemy Firebase Sites","name":"projects/udemy-firebase-sites-9bc98","resources":{"hostingSite":"udemy-firebase-sites-9bc98","storageBucket":"udemy-firebase-sites-9bc98.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_00bbe8ea-8d40-4c73-85d6-695c5a028fb1"}
+[debug] [2022-08-24T12:50:22.359Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions [none]
+[debug] [2022-08-24T12:50:22.360Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-08-24T12:50:23.667Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions 200
+[debug] [2022-08-24T12:50:23.667Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions {"name":"projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[udemy-firebase-sites-9bc98]: beginning deploy... 
+[info] i  hosting[udemy-firebase-sites-9bc98]: found 7 files in dist 
+[debug] [2022-08-24T12:50:23.683Z] [hosting] uploading with 200 concurrency
+[debug] [2022-08-24T12:50:23.693Z] [hosting] hash cache [ZGlzdA] stored for 7 files
+[debug] [2022-08-24T12:50:23.694Z] [hosting][hash queue][FINAL] {"max":2,"min":1,"avg":1,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":6}
+[debug] [2022-08-24T12:50:23.695Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234:populateFiles [none]
+[debug] [2022-08-24T12:50:23.695Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234:populateFiles {"files":{"/favicon.ico":"d5451f0f0f0bcbcd433bbdf4f6e7e5d89d8ecce2650649e969ccb5e5cd499ab2","/index.html":"34d45b4489e66e57fccd59ca0e1adb656e539134cb3719170cec28ab325e571a","/css/app.e6f7c0bd.css":"f993d1dc6b5dba0e74024b0583eeeac7db639cc5ca67ac789eeb3c2f76187615","/js/app.49085fd4.js":"06e43ebb793bff267bd43dd865ffe8463acc62f4fa63cd9bdaf6103cfe16f725","/js/app.49085fd4.js.map":"6584b40c341f38ff18e7e5c4799f508f7d77ee16defca4112807731070696327","/js/chunk-vendors.c2c2d51b.js":"7c0221bfd252e44b39eb84e0f2e7c081a06fe4d248410003b7ce2e32e0a1f42e","/js/chunk-vendors.c2c2d51b.js.map":"264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"}}
+[debug] [2022-08-24T12:50:24.746Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234:populateFiles 200
+[debug] [2022-08-24T12:50:24.746Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/211741095964/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234:populateFiles {"uploadRequiredHashes":["264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234/files"}
+[debug] [2022-08-24T12:50:24.750Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [none]
+[debug] [2022-08-24T12:50:24.750Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/udemy-firebase-sites-9bc98/versions/d87e90a333c90234/files/264de550956fb8a53a89530fbb8de91b53e460b62c88bfd0ed999bc596e20a1c [stream]
+[debug] [2022-08-24T12:50:24.753Z] [hosting][populate queue][FINAL] {"max":1059,"min":1059,"avg":1059,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1062}
+[debug] [2022-08-24T12:50:24.753Z] [hosting] uploads queued: 1
+[debug] [2022-08-24T12:50:32.398Z] Error: kill ENOSYS
+    at process.kill (node:internal/process/per_thread:220:13)
+    at process.listener (C:\Users\Macber-PC1\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\signal-exit\index.js:95:15)
+    at process.emit (node:events:527:28)
+[error] 
+[error] Error: An unexpected error has occurred.
